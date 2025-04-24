@@ -24,7 +24,7 @@ client.on('messageCreate', async message => {
   }
 
   try {
-    const res = await translate(texto, { to: 'pt' }); // traduz para português
+    const res = await translate(texto, { to: 'pt' });
     message.channel.send(`📘 Tradução: ${res.text}`);
   } catch (error) {
     console.error(error);
